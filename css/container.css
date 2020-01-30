@@ -14,16 +14,22 @@
 .container h1 {
     color: #ff4532;
     font-size: 4em;
+    font-family: 'Patua One', cursive;
 }
 
 .container span {
     border-right: 0.1em solid #ff4532;
-    font-family: 'Patua One', cursive;
 }
 
 .container p {
     color: #a8a7a7;
     font-family: 'Muli', sans-serif;
+}
+
+@media (min-width: 2560px) {
+    .container {
+        font-size: 2.5em;
+    }
 }
 
 @media (max-width: 2560px) {

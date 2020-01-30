@@ -1,0 +1,66 @@
+.container {
+  top: 45%;
+  left: 30%;
+}
+
+.container h1 {
+  font-size: 2em;
+}
+
+.social {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
+
+.social li {
+  list-style: none;
+  margin: 10% 200px;
+  display: inline-block;
+  font-size: 10em;
+  transition: 0.5s;
+}
+
+.social a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.social a:hover {
+  color: #ff4532;
+  transition: 0.5s;
+}
+
+@media (max-width: 1724px) {
+  .social li {
+    margin: 10% 150px;
+    font-size: 7em;
+  }
+}
+
+@media (max-width: 1280px) {
+  .social li {
+    margin: 10% 80px;
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 766px) {
+  .social li {
+    margin: 10% 30px;
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 581px) {
+  .container {
+    top: 40%;
+    left: 40%;
+  }
+
+  .social li {
+    margin: 5% 20px;
+    font-size: 2em;
+  }
+}
