@@ -1,0 +1,104 @@
+#reviewMe:hover {
+    background-color: rgb(54, 54, 197);
+}
+
+.form-overlay {
+    transition: 0.5s ease-in-out;
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-content {
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    z-index: 100001;
+    border-radius: 4px;
+}
+
+.text-input {
+    width: 50%;
+    display: block;
+    margin: 15px auto;
+    margin-top: 5%;
+}
+.close a:link, .close a:visited {
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.close {
+    position: relative;
+    top: 2%;
+    left: 90%;
+    font-size: 2em;
+    color: #000000;
+}
+
+
+.close a:hover {
+    color: #ff4532;
+    transition: 0.5s;
+}
+
+#submitButton {
+    background-color: #00C5BE;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    padding: 10px 50px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#submitButton:hover {
+    background-color: rgb(0, 255, 247);
+}
+
+.range-input {
+    display: block;
+    margin: 15px auto;
+}
+
+.submit-button {
+    margin-top: 10%;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 0 20px;
+    }    
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #333;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+    }
+
+    header nav.active {
+        left: 0;
+    }
+
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Review</title>
+
+    <!-- Font Awesoeme kit -->
+    <script src="https://kit.fontawesome.com/536a1a02a0.js" crossorigin="anonymous"></script>
+
+    <!-- Background CSS -->
+    <link rel="stylesheet" href="/css/background.css">
+
+    <!-- Navbar CSS -->
+    <link rel="stylesheet" href="/css/navbar.css">
+
+    <!-- Form CSS -->
+    <link rel="stylesheet" href="/css/review.css">
+
+</head>
+<body>
+    <!--- NavBar -->
+    <header>
+        <div class="logo">Kunwar Shaanjeet</div>
+        <nav id="toggler">
+            <ul>
+                <li onclick="revealMe()"><a href="#" id="reviewMe"><i class="fas fa-pencil-alt">  Review Me!</i></a></li>
+                <li><a href="/html/index.html"><i class="fas fa-home">  Home</i></a></li>
+                <li><a href="/html/about.html"><i class="fas fa-address-card">  About</i></a></li>
+                <li><a href="/html/gallery.html"><i class="fas fa-images"> Gallery</i></a></li>
+                <li><a href="/html/review.html" class="active"><i class="fas fa-table">  Reviews</i></a></li>
+                <li><a href="/html/contact.html"><i class="fas fa-phone-alt">  Contact</i></a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="menu-toggler">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <!-- /NavBar -->
+
+    <!-- Gotop button -->
+    <div onclick="goTop()" id="goTopButton">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!-- /Gotop button -->
+
+    <!-- Popup form -->
+    <div class="form-overlay" id="form-overlayid">
+        <div class="form-content">
+            <div class="close" onclick="revealMe()"><a href="#"><i class="fas fa-times-circle"></a></i></div>
+            <form action="" class="form-content">
+                <input type="text" placeholder="Name" class="text-input">
+                <input type="text" placeholder="Skill" class="text-input">
+                <input type="range" min="1" max="3" class="range-input">
+                <input type="text" placeholder="Comments" class="text-input">
+                <div class="submit-button"><a href="#" id="submitButton">Submit</a></div>
+            </form>
+        </div>
+    </div>
+    <!-- /Popup form -->
+
+    <!-- Star Background -->
+    <div class="stars"></div>
+    <div class="twinkling"><div>
+    <!-- Navbar JS -->
+    <script src="/js/navbar.js"></script>
+    <!-- Review JS -->
+    <script src="/js/review.js"></script>
+</body>
+</html>

@@ -108,7 +108,7 @@
   text-decoration: none;
 }
 
-.content a:link, a:visited {
+.content a:link, .content a:visited {
   color: #a8a7a7;
 }
 

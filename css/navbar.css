@@ -69,7 +69,7 @@ header nav ul li a.active {
     display: none;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1030px) {
     header {
         padding: 0 20px;
     }    
