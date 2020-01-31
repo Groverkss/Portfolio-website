@@ -27,8 +27,8 @@
             <ul>
                 <li><a href="/html/index.html" class="active"><i class="fas fa-home">  Home</i></a></li>
                 <li><a href="/html/about.html"><i class="fas fa-address-card">  About</i></a></li>
-                <li><a href="/html/galler.html"><i class="fas fa-images"></i> Gallery</a></li>
-                <li><a href="/html/review.html"><i class="fas fa-table"></i>  Reviews</a></li>
+                <li><a href="/html/gallery.html"><i class="fas fa-images"> Gallery</i></a></li>
+                <li><a href="/html/review.html"><i class="fas fa-table">  Reviews</i></a></li>
                 <li><a href="/html/contact.html"><i class="fas fa-phone-alt">  Contact</i></a></li>
             </ul>
         </nav>
@@ -47,11 +47,20 @@
     </div>
     <!-- /Main button -->
 
+    <!-- Visit tracker button -->
+    <div onclick="showVisit()" id="showVisitButton">
+        <i class="fas fa-eye"></i>
+    </div>
+    <!-- /Visit tracker button -->
     <!-- Gotop button -->
     <div onclick="goTop()" id="goTopButton">
       <i class="fas fa-arrow-up"></i>
     </div>
     <!-- /Gotop button -->
+
+    <!-- Visit counter -->
+    <div id="visitBar">Some text some message..</div>
+    <!-- /Visit counter -->
 
     <!-- Star Background -->
     <div class="stars"></div>
@@ -60,5 +69,7 @@
     <script src="/js/navbar.js"></script>
     <!--Typewriter Effect JS -->
     <script src="/js/typewriter.js"></script>
+    <!-- Visit tracker JS-->
+    <script src="/js/visit.js"></script>
 </body>
 </html>
