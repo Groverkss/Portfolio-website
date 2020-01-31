@@ -15,6 +15,9 @@
     <!-- Navbar CSS -->
     <link rel="stylesheet" href="/css/navbar.css">
 
+    <!-- Gallery CSS -->
+    <link rel="stylesheet" href="/css/gallery.css">
+
 </head>
 <body>
     <!--- NavBar -->
@@ -39,12 +42,68 @@
     <div onclick="goTop()" id="goTopButton">
         <i class="fas fa-arrow-up"></i>
     </div>
-        <!-- /Gotop button -->
+    <!-- /Gotop button -->
+
+    <!-- Empty space-->
+    <div class="space">
+        &nbsp;<br>
+        &nbsp;<br>
+        &nbsp;<br>
+        &nbsp;<br>
+        &nbsp;<br>
+    </div>
+    <!-- /Empty space -->
+
+    <!-- Image Gallery -->
+    <div class="slideshow-container" onclick="plusSlides(1)">
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="/img/1.jpg" style="width:100%">
+        <div class="text"><3</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="/img/2.jpg" style="width:100%">
+        <div class="text">Mehul rethinking his life choices</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="/img/4.jpeg" style="width:100%">
+        <div class="text">One half of residents of room 333</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="/img/3.jpg" style="width:100%">
+        <div class="text">Lohri 2020</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="/img/5.jpg" style="width:100%">
+        <div class="text">Rjo.jpg</div>
+        </div>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div> 
+    <!-- /Image Galelry -->
 
     <!-- Star Background -->
     <div class="stars"></div>
     <div class="twinkling"><div>
     <!-- Navbar JS -->
     <script src="/js/navbar.js"></script>
+
+    <!-- Gallery JS -->
+    <script src="/js/gallery.js"></script>
 </body>
 </html>
