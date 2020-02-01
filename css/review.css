@@ -102,3 +102,33 @@
         text-align: center;
     }
 }
+
+table {
+  z-index: 1;
+  border-collapse: collapse;
+  margin-top: 10%;
+  width: 50%;
+}
+  
+table, th, td {
+  border: 1px solid black;
+  padding: 15px;
+  text-align: left;
+}
+  
+th {
+  height: 50px;
+}
+
+tr:nth-child(even) {background-color: red;}
+tr:nth-child(odd) {background-color: blue;}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.table-overlay {
+    display: flex;
+    justify-content: center;
+}

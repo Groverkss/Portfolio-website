@@ -17,7 +17,6 @@
 
     <!-- Form CSS -->
     <link rel="stylesheet" href="/css/review.css">
-
 </head>
 <body>
     <!--- NavBar -->
@@ -50,15 +49,33 @@
         <div class="form-content">
             <div class="close" onclick="revealMe()"><a href="#"><i class="fas fa-times-circle"></a></i></div>
             <form action="" class="form-content">
-                <input type="text" placeholder="Name" class="text-input">
-                <input type="text" placeholder="Skill" class="text-input">
-                <input type="range" min="1" max="3" class="range-input">
-                <input type="text" placeholder="Comments" class="text-input">
-                <div class="submit-button"><a href="#" id="submitButton">Submit</a></div>
+                <input type="text" placeholder="Name" class="text-input" id="form-name">
+                <input type="text" placeholder="Skill" class="text-input" id="form-skill">
+                <input type="range" min="1" max="3" class="range-input" id="form-range">
+                <input type="text" placeholder="Comments" class="text-input" id="form-comments">
+                <div class="submit-button" onclick="createNewValue()"><a href="#" id="submitButton">Submit</a></div>
             </form>
         </div>
     </div>
     <!-- /Popup form -->
+
+    <!-- Table -->
+    <div class="table-overlay">
+        <table class="table-content">
+            <thead class="table-head">
+                <tr>
+                    <th>Name</th>
+                    <th>Skill</th>
+                    <th>Rating</th>
+                    <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Content to be added via JS -->
+            </tbody>
+        </table>
+    </div>
+    <!-- /Table-->
 
     <!-- Star Background -->
     <div class="stars"></div>
