@@ -27,12 +27,12 @@
 }
 
 .stars {
-  background:#000 url(/img/stars.png) repeat top center;
+  background:#000 url(../img/stars.png) repeat top center;
   z-index:-1000001;
 }
 
 .twinkling{
-  background:transparent url(/img/twinkling.png) repeat top center;
+  background:transparent url(../img/twinkling.png) repeat top center;
   z-index:-1000000;
 
   -moz-animation:move-twink-back 200s linear infinite;

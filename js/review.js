@@ -17,7 +17,15 @@ function createNewValue() {
     var range = document.getElementById("form-range").value;
     var rangeInt = parseInt(range);
     var comment = document.getElementById("form-comments").value;
-    document.getElementById("table-body").innerHTML += "<tr><td>" + name + "</td><td>" + skill + "</td><td>" + rangeInt + "</td><td>" + comment + "</td></tr>";
+    var rangeAns;
+    if (rangeInt == 1) {
+        rangeAns = "Beginner"
+    } else if (rangeInt == 2) {
+        rangeAns = "Intermediate";
+    } else {
+        rangeAns = "Proficient";
+    }
+    document.getElementById("table-body").innerHTML += "<tr><td>" + name + "</td><td>" + skill + "</td><td>" + rangeAns + "</td><td>" + comment + "</td></tr>";
     document.getElementById("form-name").value = "";
     document.getElementById("form-skill").value = "";
     document.getElementById("form-range").value = "";
